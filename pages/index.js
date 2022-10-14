@@ -1,6 +1,7 @@
 /** @format */
 
 import Head from "next/head";
+import Script from "next/script";
 import { styled } from "@stitches/react";
 import Lottie from "react-lottie";
 import * as animationData from "../lottie/WOTW.json";
@@ -33,6 +34,20 @@ export default function Home() {
         ></meta>
         <meta name="author" content="Desmond Sofua"></meta>
       </Head>
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-9W5L4788WZ"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9W5L4788WZ');
+  `}
+      </Script>
       <LottieWrapper>
         <Lottie
           options={defaultOptions}
