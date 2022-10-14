@@ -27,7 +27,7 @@ export default function Home() {
           options={defaultOptions}
           // width={100}
           // height={400}
-          style={{ margin: "0px", width: "100vw" }}
+          style={{ margin: "0px", width: "100%", height: "100%" }}
         />
       </LottieWrapper>
     </Wrapper>
@@ -35,13 +35,14 @@ export default function Home() {
 }
 
 const Wrapper = styled("div", {
-  height: "100vh",
+  height: "100%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  overflow: "hidden",
 });
 
 const LottieWrapper = styled("div", {
-  // backgroundColor: "pink",
+  padding: 30,
   width: "100%",
 });
