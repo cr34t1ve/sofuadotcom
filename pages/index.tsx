@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 import Script from "next/script";
-import { styled } from "@stitches/react";
+import { styled } from "../stitches.config";
 import Lottie from "react-lottie";
 import * as animationData from "../lottie/WOTW.json";
 
@@ -17,7 +17,7 @@ const defaultOptions = {
 
 export default function Home() {
   return (
-    <Wrapper>
+    <>
       <Head>
         <title>Master Sofua Desmond</title>
         <link rel="icon" href="/favicon.png" />
@@ -42,21 +42,23 @@ export default function Home() {
       <Script id="google-analytics" strategy="afterInteractive">
         {`
     window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9W5L4788WZ');
-  `}
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-9W5L4788WZ');
+    `}
       </Script>
-      <LottieWrapper>
-        <Lottie
-          options={defaultOptions}
-          // width={100}
-          // height={400}
-          style={{ margin: "0px", width: "100%", height: "100%" }}
-        />
-      </LottieWrapper>
-    </Wrapper>
+      <Wrapper>
+        <LottieWrapper>
+          <Lottie
+            options={defaultOptions}
+            // width={100}
+            // height={400}
+            style={{ margin: "0px", width: "100%", height: "100%" }}
+          />
+        </LottieWrapper>
+      </Wrapper>
+    </>
   );
 }
 
@@ -66,9 +68,16 @@ const Wrapper = styled("div", {
   flexDirection: "column",
   justifyContent: "center",
   overflow: "hidden",
+  "@sm": {
+    height: "100vh",
+  },
 });
 
 const LottieWrapper = styled("div", {
+  // marginTop: "auto",
   padding: 30,
   width: "100%",
+  "@sm": {
+    marginTop: "initial",
+  },
 });
