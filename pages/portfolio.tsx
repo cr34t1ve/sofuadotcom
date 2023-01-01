@@ -29,12 +29,12 @@ const Work = [
   {
     id: 5,
     title: "Simplecoins",
-    link: "simplecoins.io",
+    link: "",
   },
   {
     id: 6,
     title: "Rev Inc.",
-    link: "revdeliver.com",
+    link: "",
   },
 ];
 
@@ -147,7 +147,11 @@ export default function Home() {
                   <Text font="apercu" size={6}>
                     {work.title}
                   </Text>
-                  <ChainLink>🔗</ChainLink>
+                  {work.link && (
+                    <>
+                      <ChainLink>🔗</ChainLink>
+                    </>
+                  )}
                 </WorkCard>
               ))}
             </div>
