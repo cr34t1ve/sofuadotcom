@@ -285,6 +285,7 @@ const WorkCard = styled(Link, {
 
   [`& ${ChainLink}`]: {
     opacity: "0",
+    transition: "opacity 350ms ease",
   },
 
   "&:hover": {
