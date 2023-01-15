@@ -41,8 +41,8 @@ const Work = [
 const Projects = [
   {
     id: 1,
-    title: "MailPigeon",
-    link: "mailpigeon.io",
+    title: "AuctionPapa",
+    link: "https://auctionpapa-front.vercel.app/",
   },
 ];
 
