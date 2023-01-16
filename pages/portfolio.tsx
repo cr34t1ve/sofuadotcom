@@ -42,7 +42,7 @@ const Projects = [
   {
     id: 1,
     title: "AuctionPapa",
-    link: "https://auctionpapa-front.vercel.app/",
+    link: "https://auctionpapa.vercel.app/",
   },
 ];
 
