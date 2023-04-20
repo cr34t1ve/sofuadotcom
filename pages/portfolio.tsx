@@ -41,24 +41,35 @@ const Work = [
 const Projects = [
   {
     id: 1,
+    title: "Systemizer",
+    link: "https://www.figma.com/community/plugin/1227072991823029464",
+  },
+  {
+    id: 2,
     title: "AuctionPapa",
     link: "https://auctionpapa.vercel.app/",
+    link: "https://www.auctionpapa.com/",
   },
 ];
 
 const SideProjects = [
   {
     id: 1,
+    title: "SPAWN Campfire",
+    link: "https://www.scfaccra.com/",
+  },
+  {
+    id: 2,
     title: "Beautiful Stories",
     link: "https://beautifulstories.webflow.io/",
   },
   {
-    id: 2,
+    id: 3,
     title: "StatsGH",
     link: "https://statsgh.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Adele Photofolio",
     link: "https://adele.webflow.io/",
   },
