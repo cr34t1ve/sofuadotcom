@@ -109,6 +109,14 @@ export const Text = styled("p", {
         color: "$silver",
       },
     },
+    link: {
+      true: {
+        "&:hover": {
+          textDecoration: "underline",
+          color: "$primaryText",
+        },
+      },
+    },
   },
   //   "@xm": {
   //     textAlign: "left",

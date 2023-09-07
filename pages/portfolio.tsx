@@ -40,9 +40,9 @@ const Work = [
 
 const Projects = [
   {
-    id: 1,
-    title: "Systemizer",
-    link: "https://www.figma.com/community/plugin/1227072991823029464",
+    id: 0,
+    title: "FluffyShelf",
+    link: "https://fluffyshelf.com/",
   },
   {
     id: 2,
@@ -52,6 +52,11 @@ const Projects = [
 ];
 
 const SideProjects = [
+  {
+    id: 1,
+    title: "Systemizer - Figma Plugin",
+    link: "https://www.figma.com/community/plugin/1227072991823029464",
+  },
   {
     id: 1,
     title: "SPAWN Campfire",
@@ -82,10 +87,7 @@ export default function Home() {
     <>
       <Head>
         <title>{title}</title>
-        <meta
-          name="description"
-          content="Desmond Sofua's temporary Portfolio"
-        />
+        <meta name="description" content="Desmond Sofua's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <meta charset="utf-8" /> */}
         <link rel="icon" href="/favicon32.png" />
@@ -115,7 +117,52 @@ export default function Home() {
       <MaxWidth>
         <Wrapper>
           <Header>
-            <Spacer />
+            <Spacer
+              css={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 5,
+                "@sm": {
+                  display: "none",
+                },
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                }}
+              >
+                <Text
+                  link
+                  as={Link}
+                  target="_blank"
+                  href="mailto: desmond@sofua.co.uk"
+                >
+                  Email
+                </Text>
+                <CircularDivider />
+                <Text
+                  link
+                  as={Link}
+                  target="_blank"
+                  href="https://read.cv/desmondsofua"
+                >
+                  read.cv
+                </Text>
+                <CircularDivider />
+                <Text
+                  link
+                  as={Link}
+                  target="_blank"
+                  href="https://github.com/cr34t1ve"
+                >
+                  Github
+                </Text>
+              </div>
+              <Text css={{ fontWeight: "$medium" }}>Contact</Text>
+            </Spacer>
             <Text>
               Currently Frontend engineer at <br /> New Comma
             </Text>
@@ -149,10 +196,10 @@ export default function Home() {
               Work
             </Text>
             <div>
-              {Work.map((work) => (
-                <WorkCard href={work.link} target="_blank" key={work.id}>
+              {Work.map((work, index) => (
+                <WorkCard href={work.link} target="_blank" key={index}>
                   <Text font="apercu" size={5}>
-                    {work.id.toString().padStart(2, "0")}
+                    {(index + 1).toString().padStart(2, "0")}
                   </Text>
                   <Text font="apercu" size={6}>
                     {work.title}
@@ -171,10 +218,10 @@ export default function Home() {
               Projects
             </Text>
             <div>
-              {Projects.map((project) => (
-                <WorkCard href={project.link} target="_blank" key={project.id}>
+              {Projects.map((project, index) => (
+                <WorkCard href={project.link} target="_blank" key={index}>
                   <Text font="apercu" size={5}>
-                    {project.id.toString().padStart(2, "0")}
+                    {(index + 1).toString().padStart(2, "0")}
                   </Text>
                   <Text font="apercu" size={6}>
                     {project.title}
@@ -189,10 +236,10 @@ export default function Home() {
               Side Projects
             </Text>
             <div>
-              {SideProjects.map((project) => (
-                <WorkCard href={project.link} target="_blank" key={project.id}>
+              {SideProjects.map((project, index) => (
+                <WorkCard href={project.link} target="_blank" key={index}>
                   <Text font="apercu" size={5}>
-                    {project.id.toString().padStart(2, "0")}
+                    {(index + 1).toString().padStart(2, "0")}
                   </Text>
                   <Text font="apercu" size={6}>
                     {project.title}
@@ -202,6 +249,52 @@ export default function Home() {
               ))}
             </div>
           </WorksSection>
+          <Spacer
+            css={{
+              marginTop: 90,
+              display: "none",
+              "@sm": {
+                display: "flex",
+                flexDirection: "column",
+                gap: 5,
+              },
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+              }}
+            >
+              <Text
+                link
+                as={Link}
+                target="_blank"
+                href="mailto: desmond@sofua.co.uk"
+              >
+                Email
+              </Text>
+              <CircularDivider />
+              <Text
+                link
+                as={Link}
+                target="_blank"
+                href="https://read.cv/desmondsofua"
+              >
+                read.cv
+              </Text>
+              <CircularDivider />
+              <Text
+                link
+                as={Link}
+                target="_blank"
+                href="https://github.com/cr34t1ve"
+              >
+                Github
+              </Text>
+            </div>
+          </Spacer>
         </Wrapper>
       </MaxWidth>
     </>
@@ -228,7 +321,7 @@ const Wrapper = styled("div", {
   width: "100%",
 
   "@sm": {
-    padding: "60px 20px 64px 20px",
+    padding: "60px 20px 120px 20px",
   },
 });
 
@@ -330,4 +423,11 @@ const Divider = styled("div", {
   "@sm": {
     display: "revert",
   },
+});
+
+const CircularDivider = styled("div", {
+  width: 4,
+  height: 4,
+  borderRadius: "50%",
+  backgroundColor: "$primaryText",
 });
