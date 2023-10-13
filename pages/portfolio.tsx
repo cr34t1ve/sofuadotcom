@@ -7,32 +7,26 @@ import Link from "next/link";
 
 const Work = [
   {
-    id: 1,
     title: "New Comma",
     link: "https://newcomma.com",
   },
   {
-    id: 2,
     title: "Sunami Games",
     link: "https://sunamigames.com",
   },
   {
-    id: 3,
     title: "Rare Goods Only",
     link: "https://raregoodsonly.webflow.io/",
   },
   {
-    id: 4,
     title: "Judical Service of Ghana",
     link: "https://apps.apple.com/gh/app/e-judgment-mobile/id1604602114?platform=ipad",
   },
   {
-    id: 5,
     title: "Simplecoins",
     link: "",
   },
   {
-    id: 6,
     title: "Rev Inc.",
     link: "",
   },
@@ -40,12 +34,14 @@ const Work = [
 
 const Projects = [
   {
-    id: 0,
+    title: "MailPigeon",
+    link: "https://mailpigeon-front.vercel.app/",
+  },
+  {
     title: "FluffyShelf",
     link: "https://fluffyshelf.com/",
   },
   {
-    id: 2,
     title: "AuctionPapa",
     link: "https://www.auctionpapa.com/",
   },
@@ -53,27 +49,34 @@ const Projects = [
 
 const SideProjects = [
   {
-    id: 1,
     title: "Systemizer - Figma Plugin",
     link: "https://www.figma.com/community/plugin/1227072991823029464",
   },
   {
-    id: 1,
+    title: "Mirage UI",
+    link: "https://www.mirageui.com/",
+  },
+  {
     title: "SPAWN Campfire",
     link: "https://www.scfaccra.com/",
   },
   {
-    id: 2,
+    title: "Resume Builder",
+    link: "https://cosmic-log-resume-builder.vercel.app/",
+  },
+  {
+    title: "Restaurant Web Scraper",
+    link: "https://github.com/cr34t1ve/zubzz-crawler",
+  },
+  {
     title: "Beautiful Stories",
     link: "https://beautifulstories.webflow.io/",
   },
   {
-    id: 3,
     title: "StatsGH",
     link: "https://statsgh.netlify.app/",
   },
   {
-    id: 4,
     title: "Adele Photofolio",
     link: "https://adele.webflow.io/",
   },
