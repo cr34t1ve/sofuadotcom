@@ -57,12 +57,12 @@ const SideProjects = [
     link: "https://www.mirageui.com/",
   },
   {
-    title: "SPAWN Campfire",
-    link: "https://www.scfaccra.com/",
+    title: "CV Mason",
+    link: "https://cosmic-log-resume-builder.vercel.app/",
   },
   {
-    title: "Resume Builder",
-    link: "https://cosmic-log-resume-builder.vercel.app/",
+    title: "SPAWN Campfire",
+    link: "https://www.scfaccra.com/",
   },
   {
     title: "Restaurant Web Scraper",
