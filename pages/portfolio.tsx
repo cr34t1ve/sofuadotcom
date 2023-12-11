@@ -45,9 +45,17 @@ const Projects = [
     title: "AuctionPapa",
     link: "https://www.auctionpapa.com/",
   },
+  {
+    title: "Hoprun",
+    link: "https://www.hoprun.co/",
+  },
 ];
 
 const SideProjects = [
+  {
+    title: "Mound - Raycast Extensions",
+    link: "https://www.raycast.com/desmondsofua/mound-for-pile",
+  },
   {
     title: "Systemizer - Figma Plugin",
     link: "https://www.figma.com/community/plugin/1227072991823029464",
@@ -71,14 +79,6 @@ const SideProjects = [
   {
     title: "Beautiful Stories",
     link: "https://beautifulstories.webflow.io/",
-  },
-  {
-    title: "StatsGH",
-    link: "https://statsgh.netlify.app/",
-  },
-  {
-    title: "Adele Photofolio",
-    link: "https://adele.webflow.io/",
   },
 ];
 
