@@ -90,8 +90,9 @@ export default function Home() {
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="Desmond Sofua's Portfolio" />
+        <meta name="description" content="Desmond Sofua" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Desmond Sofua, Sofua, Desmond" />
         {/* <meta charset="utf-8" /> */}
         <link rel="icon" href="/favicon32.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
