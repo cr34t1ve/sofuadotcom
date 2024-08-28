@@ -35,7 +35,7 @@ const Work = [
 const Projects = [
   {
     title: "MailPigeon",
-    link: "https://mailpigeon-front.vercel.app/",
+    link: "https://forms.mailpigeon.app/",
   },
   {
     title: "FluffyShelf",
@@ -82,7 +82,7 @@ const SideProjects = [
   },
 ];
 
-const title = `Desmond Sofua's Portfolio`;
+const title = `Desmond Sofua`;
 const image = `https://uploads-ssl.webflow.com/625def3e532869b398ef78cf/63ab0a35c73ddfb4d6fcb19b_og.png`;
 
 export default function Home() {
@@ -101,12 +101,12 @@ export default function Home() {
         <meta property="og:image" content={image} />
 
         <meta property="og:type" content="website" />
-        {/* <meta property="og:url" content="https://www.sunamigames.com/" /> */}
+        <meta property="og:url" content="https://www.sofua.co.uk/" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={title} />
 
         <meta property="twitter:card" content={title} />
-        {/* <meta property="twitter:url" content="https://www.sunamigames.com/" /> */}
+        <meta property="twitter:url" content="https://www.sofua.co.uk/" />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={title} />
         <meta property="twitter:image" content={title} />
@@ -167,9 +167,7 @@ export default function Home() {
               </div>
               <Text css={{ fontWeight: "$medium" }}>Contact</Text>
             </Spacer>
-            <Text>
-              Currently Frontend engineer at <br /> New Comma
-            </Text>
+            {/* <Text>Currently working on an email server</Text> */}
             <Text
               css={{
                 flex: 1,
@@ -191,9 +189,9 @@ export default function Home() {
           </Hero>
           <Divider />
           <Text size={9} color="primaryLight" font="apercu">
-            I&apos;m a Creative Developer based in Accra, Ghana currently
-            working as a <span> Frontend engineer at New Comma, </span> a
-            startup connecting African creatives to lucrative opportunities.
+            I&apos;m a Software Engineer based in Accra, Ghana. Previously
+            worked as a <span> Frontend engineer at New Comma, </span> a startup
+            connecting African creatives to lucrative opportunities.
           </Text>
           <WorksSection>
             <Text color="silver" size={4} font="apercu">
@@ -397,6 +395,10 @@ const WorkCard = styled(Link, {
   [`& ${ChainLink}`]: {
     opacity: "0",
     transition: "opacity 350ms ease",
+  },
+
+  "&:last-of-type": {
+    borderBottom: "none",
   },
 
   "&:hover": {
