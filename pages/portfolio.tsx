@@ -34,8 +34,8 @@ const Work = [
 
 const Projects = [
   {
-    title: "MailPigeon",
-    link: "https://forms.mailpigeon.app/",
+    title: "Hay",
+    link: "https://usehay.com/",
   },
   {
     title: "FluffyShelf",
@@ -151,9 +151,9 @@ export default function Home() {
                   link
                   as={Link}
                   target="_blank"
-                  href="https://read.cv/desmondsofua"
+                  href="https://linkedin.com/in/desmondsofua"
                 >
-                  read.cv
+                  LinkedIn
                 </Text>
                 <CircularDivider />
                 <Text
@@ -167,7 +167,7 @@ export default function Home() {
               </div>
               <Text css={{ fontWeight: "$medium" }}>Contact</Text>
             </Spacer>
-            {/* <Text>Currently working on an email server</Text> */}
+            <Text>Currently builing an email server</Text>
             <Text
               css={{
                 flex: 1,
